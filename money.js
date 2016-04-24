@@ -10,7 +10,7 @@ function updateFunc(){
     }else{
       clientMessage("Your version: "+updateLog+"\nis outdated. Get version"+String(out.toString())+"at\n§6https://raw.githubusercontent.com/JDude420/Money-Mod/master/money.js");
       ModPE.showTipMessage("§4**----===----**");
-  }catch(e){clientMessage("Please connect to the internet | Reason: Update")
+  }catch(e){clientMessage("Please connect to the internet | Reason: Update");
 }
 function newLevel(){
   updateFunc();
