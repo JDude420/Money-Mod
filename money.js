@@ -15,3 +15,4 @@ function updateFunc(){
 function newLevel(){
   updateFunc();
 }
+ModPE.setItem(3240, "gold_nugget", 0, "Coin", 20);
