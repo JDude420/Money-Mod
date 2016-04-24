@@ -10,9 +10,15 @@ function updateFunc(){
     }else{
       clientMessage("Your version: "+updateLog+"\nis outdated. Get version"+String(out.toString())+"at\n§6https://raw.githubusercontent.com/JDude420/Money-Mod/master/money.js");
       ModPE.showTipMessage("§4**----===----**");
+    }
   }catch(e){clientMessage("Please connect to the internet | Reason: Update"); }
 }
 function newLevel(){
   updateFunc();
 }
 ModPE.setItem(3240, "gold_nugget", 0, "Coin", 20);
+function modTick(){
+  if(getCarriedItem()==3240){
+    ModPE.showTipMessage("§eYou have "+Player.getCarriedItemCount()+" coins left");
+  }
+}
