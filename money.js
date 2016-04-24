@@ -8,7 +8,7 @@ function updateFunc(){
       clientMessage("Your version: "+updateLog+"\nis the current\nupdate");
       ModPE.showTipMessage("§a**----===----**");
     }else{
-      clientMessage("Your version: "++"\nis outdated. Get version"++"at\n§6https://raw.githubusercontent.com/JDude420/Money-Mod/master/money.js");
+      clientMessage("Your version: "+updateLog+"\nis outdated. Get version"+String(out.toString())+"at\n§6https://raw.githubusercontent.com/JDude420/Money-Mod/master/money.js");
       ModPE.showTipMessage("§4**----===----**");
   }catch(e){clientMessage("Please connect to the internet | Reason: Update")
 }
