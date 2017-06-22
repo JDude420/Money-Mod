@@ -16,6 +16,12 @@ function updateFunc(){
 function newLevel(){
   updateFunc();
 }
+function procCmd(command){
+ var cmd = command.toString(""); 
+  if(cmd[0]=="update"){
+     updateFunc();
+    }
+}
 ModPE.setItem(3240, "gold_nugget", 0, "Coin", 20);
 function modTick(){
   if(getCarriedItem()==3240){
